@@ -1,15 +1,19 @@
-body {
-    max-width: 960px;
-    width: 100%;
-    padding-top: 80px;
-    margin: 0 auto;
-    text-align: center;
-    padding-bottom: 30px;
+
+html {
     background-image: url(images/4907157.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 100vh;
+}
+
+body {
+    max-width: 960px;
+    width: 100%;
+    padding-top: 80px;
+    padding-bottom: 40px;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 30px;
 }
 
 h1 {
