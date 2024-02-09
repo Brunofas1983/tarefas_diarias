@@ -1,0 +1,158 @@
+body {
+    max-width: 960px;
+    width: 100%;
+    padding-top: 80px;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 30px;
+    background-image: url(images/4907157.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 85vh;
+}
+
+h1 {
+    font-size: 55px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.conteudo {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    margin-top: 50px;
+}
+
+.conteudo input {
+    height: 120px;
+    width: 90%;
+    font-size: 18px;
+    font-weight: bold;
+    border: 3px solid rgba(124, 124, 124, 0.39);
+    color: rgb(61, 61, 61);
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.conteudo button {
+    padding: 30px;
+    color: #fff;
+    background-color: green;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    border-radius: 0px 10px 10px 0px;
+    height: 126px;
+    width: 40%;
+}
+
+#area-lista {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    margin: auto auto;
+    padding-top: 40px;
+}
+
+.item {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    height: 80px;
+    width: 100%;
+    box-shadow: 0 0 20px #cccccc;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.item.clicado {
+    background-color: rgb(229, 243, 207);
+}
+
+.item.clicado .item-nome {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.item.clicado .item-icone span {
+    color: green;
+}
+
+.item-icone {
+    flex: 10%;
+}
+
+.item-icone span {
+    font-size: 25px;
+}
+
+.item-nome {
+    flex: 65%;
+    text-align: left;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+
+.item-botao {
+    flex: 20%;
+    
+}
+
+.deletar {
+    width: 100%;
+    height: 80px;
+    background-color: red;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+#data {
+    font-size: 25px;
+    color: rgb(82, 82, 82);
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+@media (max-width: 767px) {
+    
+    h1 {
+        font-size: 43px;
+    }
+
+    body {
+        width: 95%;
+    }
+    
+    .item-nome {
+        flex: 60%;
+    }
+
+    .item-botao {
+        flex: 25%;
+        
+    }
+
+    #area-lista {
+        display: flex;
+        flex-flow: row wrap;
+        width: 100%;
+        margin: auto auto;
+        padding-top: 40px;
+    }
+
+    .conteudo button {
+        padding: 15px;
+    }
+
+    .conteudo input {
+        outline-color: black;
+    }
+}
